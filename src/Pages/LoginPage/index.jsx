@@ -139,13 +139,13 @@ const LoginPage = () => {
                                 </select>
                                 <span>:</span>
                                 <select value={tourTime.minute} onChange={(e) => { setTourTime({ ...tourTime, minute: e.target.value }) }} id='tour_time_h' name='tour_time_h' title='tour_time_h'>
-                                    <option value='1'>00</option>
-                                    <option value='2'>30</option>
+                                    <option value='00'>00</option>
+                                    <option value='30'>30</option>
                                 </select>
                                 <span>:</span>
                                 <select value={tourTime.period} onChange={(e) => { setTourTime({ ...tourTime, period: e.target.value }) }} id='tour_time_h' name='tour_time_h' title='tour_time_h'>
-                                    <option value='1'>AM</option>
-                                    <option value='2'>PM</option>
+                                    <option value='AM'>AM</option>
+                                    <option value='PM'>PM</option>
                                 </select>
                             </div>
                         </p>

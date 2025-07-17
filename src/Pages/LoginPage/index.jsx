@@ -26,6 +26,8 @@ const LoginPage = () => {
     const [greeter, setGreeter] = useState('');
     const [locationBooked, setLocationBooked] = useState('Silver City');
     const [notes, setNotes] = useState('');
+    const [zipCode, setZipCode] = useState('');
+
     const [isLoading, setIsLoading] = useState(false);
 
     const submit = async () => {
@@ -49,7 +51,8 @@ const LoginPage = () => {
             'opc_name': opc,
             'greeter_name': greeter,
             'location_booked': locationBooked,
-            'notes': notes
+            'notes': notes,
+            'zip_code': zipCode
         }
 
         setIsLoading(true);
@@ -191,6 +194,10 @@ const LoginPage = () => {
                         <p class='field'>
                             <label for='state'>State</label>
                             <input value={state} onChange={(e) => { setState(e.target.value) }} type='text' id='state' name='state' title='state' />
+                        </p>
+                        <p class='field'>
+                            <label for='zip_code'>Zip Code</label>
+                            <input value={zipCode} onChange={(e) => { setZipCode(e.target.value) }} type='text' id='zip_code' name='zip_code' title='zip_code' />
                         </p>
                         <p class='field'>
                             <label for='email'>Email</label>

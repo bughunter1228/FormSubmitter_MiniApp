@@ -119,11 +119,14 @@ const LoginPage = () => {
                             <label for='agent'>Agent</label>
                             <select value={agent} onChange={(e) => { setAgent(e.target.value) }} id='agent' name='agent' title='agent'>
                                 <option value='none'>Select Agent</option>
-                                <option value='John'>John</option>
-                                <option value='Sarah'>Sarah</option>
-                                <option value='Mike'>Mike</option>
-                                <option value='Emily'>Emily</option>
-                                <option value='David'>David</option>
+                                <option value='Tamkia Ayala'>Tamkia Ayala</option>
+                                <option value='Chris Zepeda'>Chris Zepeda</option>
+                                <option value='Lenore McAndrew'>Lenore McAndrew</option>
+                                <option value='Lilly Yacin'>Lilly Yacin</option>
+                                <option value='Scott Ritter'>Scott Ritter</option>
+                                <option value='Charles Taylor'>Charles Taylor</option>
+                                <option value='Robert Enriquez'>Robert Enriquez</option>
+                                <option value='Tania Palacios'>Tania Palacios</option>
                             </select>
                         </p>
                         <p class='field'>

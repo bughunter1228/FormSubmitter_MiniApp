@@ -7,6 +7,7 @@ import Loading from './Loading';
 
 const LoginPage = () => {
 
+    const [agent, setAgent] = useState('none');
     const [resortTouring, setResortTouring] = useState('Westgate');
     const [tourDate, setTourDate] = useState('');
     const [tourTime, setTourTime] = useState({ hour: '1', minute: '00', period: 'AM' });
@@ -32,7 +33,13 @@ const LoginPage = () => {
 
     const submit = async () => {
 
+        if (agent === 'none') {
+            toast.error("Please select an agent!");
+            return;
+        }
+
         const data = {
+            'agent': agent,
             'resort_touring': resortTouring,
             'tour_date': tourDate,
             'tour_time': `${tourTime.hour}:${tourTime.minute} ${tourTime.period}`,
@@ -75,6 +82,7 @@ const LoginPage = () => {
     }
 
     const clear = () => {
+        setAgent('none');
         setResortTouring('Westgate');
         setTourDate('');
         setTourTime({ hour: '1', minute: '00', period: 'AM' });
@@ -107,6 +115,17 @@ const LoginPage = () => {
                 </div>
                 <div class='box-login' style={{ overflow: 'auto', height: '80vh' }}>
                     <div class='fieldset-body' id='login_form'>
+                        <p class='field'>
+                            <label for='agent'>Agent</label>
+                            <select value={agent} onChange={(e) => { setAgent(e.target.value) }} id='agent' name='agent' title='agent'>
+                                <option value='none'>Select Agent</option>
+                                <option value='John'>John</option>
+                                <option value='Sarah'>Sarah</option>
+                                <option value='Mike'>Mike</option>
+                                <option value='Emily'>Emily</option>
+                                <option value='David'>David</option>
+                            </select>
+                        </p>
                         <p class='field'>
                             <label for='resort_touring'>Resort Touring</label>
                             <select value={resortTouring} onChange={(e) => { setResortTouring(e.target.value) }} id='resort_touring' name='resort_touring' title='resort_touring'>

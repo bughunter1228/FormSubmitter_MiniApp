@@ -127,6 +127,9 @@ const LoginPage = () => {
                                 <option value='Charles Taylor'>Charles Taylor</option>
                                 <option value='Robert Enriquez'>Robert Enriquez</option>
                                 <option value='Tania Palacios'>Tania Palacios</option>
+                                <option value='Tania Palacios'>Darren Wilson</option>
+                                <option value='Tania Palacios'>Marsha Souma</option>
+                                <option value='Tania Palacios'>Rodney Arnold</option>
                             </select>
                         </p>
                         <p class='field'>

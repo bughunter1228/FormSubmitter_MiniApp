@@ -129,6 +129,11 @@ const LoginPage = () => {
                                 <option value='Tania Palacios'>Tania Palacios</option>
                                 <option value='Marsha Souma'>Marsha Souma</option>
                                 <option value='Rodney Arnold'>Rodney Arnold</option>
+                                <option value='OPC Booking 1'>OPC Booking 1</option>
+                                <option value='OPC Booking 2'>OPC Booking 2</option>
+                                <option value='OPC Booking 3'>OPC Booking 3</option>
+                                <option value='OPC Booking 4'>OPC Booking 4</option>
+                                <option value='OPC Booking 5'>OPC Booking 5</option>
                             </select>
                         </p>
                         <p class='field'>

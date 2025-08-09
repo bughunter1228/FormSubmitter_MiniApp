@@ -26,7 +26,6 @@ const LoginPage = () => {
     const [opc, setOpc] = useState('');
     const [greeter, setGreeter] = useState('');
     const [locationBooked, setLocationBooked] = useState('Silver City');
-    const [CVS, setCVS] = useState('');
     const [notes, setNotes] = useState('');
     const [zipCode, setZipCode] = useState('');
 
@@ -59,7 +58,6 @@ const LoginPage = () => {
             'opc_name': opc,
             'greeter_name': greeter,
             'location_booked': locationBooked,
-            'CVS': CVS,
             'notes': notes,
             'zip_code': zipCode
         }
@@ -103,7 +101,6 @@ const LoginPage = () => {
         setOpc('');
         setGreeter('');
         setLocationBooked('Silver City');
-        setCVS('');
         setNotes('');
     }
 
@@ -260,11 +257,8 @@ const LoginPage = () => {
                                 <option value='ATV Booth'>ATV Booth</option>
                                 <option value='South Outlet'>South Outlet</option>
                                 <option value='Street Tour'>Street Tour</option>
+                                <option value='CVS'>CVS</option>
                             </select>
-                        </p>
-                        <p class='field'>
-                            <label for='notes'>CVS</label>
-                            <input value={CVS} onChange={(e) => { setCVS(e.target.value) }} type='text' id='CVS' name='CVS' title='CVS' />
                         </p>
                         <p class='field'>
                             <label for='notes'>Notes</label>
